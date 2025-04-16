@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: url(background.jpg);
+    color: white;
+    position: relative;
+}
+.container{
+    width: 1010px;
+    height: 160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*center from that*/
+    background: transparent;
+}
+.clock{
+    width: 100%;
+    height: 100%;
+    background: rgba(168, 117, 172, 0.393);
+    border-radius: 10px;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;/*center*/
+    font-size: 60px;
+    backdrop-filter: blur(35px);
+}
+
+.clock span{
+    width: 110px;
+    display: inline-block;
+    padding-top: 5px;
+    text-align: center;
+    position: relative;
+}
+.clock span::after{
+    font-size: 12px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+}
+#hrs::after{
+    content: 'HRS';
+}
+#min::after{
+    content: 'MIN';
+}
+#sec::after{
+    content: 'SEC';
+}
+/*additional*/
+#ampm::after {
+    content: 'AM/PM';
+}
+
+
+
+
+
+
+
+
